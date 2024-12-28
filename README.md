@@ -1,44 +1,72 @@
-Java Selenium POC
 
--	Install Java JDK and add JAVA_HOME env variable
--	Install Maven and add bin folder it to PATH env variable
--	Install following dependencies from Maven Repository
-     o	selenium-java
-     o	cucumber-java
-     o	cucumber-junit
-     o	junit
-     o	extentreports
-     o	webdrivermanager
-     o	slf4j-api
-     o	logback-classic
--	Install following Plugins on IntelliJ
-     o	Gherkin
-     o	Cucumber for Java
-     o	Docker
-     o	Lombok
+# Java Selenium POC Setup Guide
 
+## Prerequisites
 
-Setup Project folder as following :
+### 1. **Install Java JDK**
+- Install Java JDK and set up the `JAVA_HOME` environment variable.
 
+### 2. **Install Maven**
+- Install Maven and add the `bin` folder to the `PATH` environment variable.
+
+### 3. **Install Required Maven Dependencies**
+- Add the following dependencies to your `pom.xml` from the Maven Repository:
+     - `selenium-java`
+     - `cucumber-java`
+     - `cucumber-junit`
+     - `junit`
+     - `extentreports`
+     - `webdrivermanager`
+     - `slf4j-api`
+     - `logback-classic`
+
+### 4. **Install IntelliJ Plugins**
+- Install the following plugins in IntelliJ IDEA:
+     - **Gherkin**
+     - **Cucumber for Java**
+     - **Docker**
+     - **Lombok**
+
+## Project Folder Structure
+
+Project folder should be structured as follows:
+
+```
 src
 ├── main
 │    └── java
-│         └── com.example.automation
-│              ├── utils         (Utility classes)
-│              ├── drivers       (WebDriver management)
-│              └── reports       (Extent Report configuration)
+│         └──├── Drivers       (WebDriver management)
+│            ├── Pages         (Page Object)
+│            └── Reports       (Extent Report configuration)
 ├── test
-├── java
-│    └── com.example.automation
-│         ├── stepdefinitions (Step Definitions for Cucumber)
-│         └── runners         (Cucumber Test Runners)
+│    └── java
+│         └──├── Runners (Cucumber Test Runners)
+│            └── Steps         (Step Definitions for Cucumber)
 └── resources
-├── features        (Cucumber feature files)
-└── config          (Configuration files like properties)
+     ├── features      (Cucumber feature files)
+     └── config        (Configuration files like extent report, logger etc.)
+```
 
-Run following command to resolve dependencies in pom.xml
-mvn dependency:resolve
-then run following to make sure build passes successfully
-mvn clean install -DskipTests=true
+## Maven Commands
 
+### 1. **Resolve Dependencies**
+To resolve the dependencies in your `pom.xml`, run the following command:
+
+   ```bash
+   mvn dependency:resolve
+   ```
+
+### 2. **Build Project**
+After resolving the dependencies, run the following command to ensure the build passes successfully:
+
+   ```bash
+   mvn clean install -DskipTests=true
+   ```
+
+### 3. **Run Tests**
+To execute the tests, run the following command:
+
+   ```bash
+   mvn test -DtestClassName=TestRunner
+   ```
 
