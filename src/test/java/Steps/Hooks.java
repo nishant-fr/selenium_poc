@@ -17,7 +17,7 @@ import java.nio.file.Files;
 public class Hooks {
 
     private static final Logger logger = LoggerFactory.getLogger(Hooks.class);  // Create a logger instance
-    private WebDriver driver;
+    WebDriver driver;
 
     @Before
     public void setUp() {

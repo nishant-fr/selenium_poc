@@ -16,9 +16,15 @@
      - `cucumber-junit`
      - `junit`
      - `extentreports`
+     - `extentreports-cucumber7-adapter`
      - `webdrivermanager`
      - `slf4j-api`
      - `logback-classic`
+     - `cucumber-picocontainer`
+     - `jakarta.ws.rs-api`
+     - `jakarta.json`
+     - `assertj-core`
+     - `json-unit-assertj`
 
 ### 4. **Install IntelliJ Plugins**
 - Install the following plugins in IntelliJ IDEA:
