@@ -49,7 +49,7 @@ public class LoginPage {
     }
 
     public void enterUsername(String username) {
-        log.info("Entering user name {}", username);
+        log.info("Entering user id {}", username);
         usernameInput.sendKeys(username);
     }
 

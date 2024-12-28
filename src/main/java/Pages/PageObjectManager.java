@@ -15,4 +15,9 @@ public class PageObjectManager {
     public LoginPage getLoginPage() {
         return (loginPage == null) ? loginPage = new LoginPage(driver) : loginPage;
     }
+
+    private ResetPasswordPage resetPasswordPage;
+    public ResetPasswordPage getResetPasswordPage() {
+        return (resetPasswordPage == null) ? resetPasswordPage = new ResetPasswordPage(driver) : resetPasswordPage;
+    }
 }
