@@ -20,4 +20,10 @@ public class PageObjectManager {
     public ResetPasswordPage getResetPasswordPage() {
         return (resetPasswordPage == null) ? resetPasswordPage = new ResetPasswordPage(driver) : resetPasswordPage;
     }
+
+    private UserRegistrationPage userRegistrationPage;
+    public UserRegistrationPage getUserRegistrationPage() {
+        return (userRegistrationPage == null) ? userRegistrationPage = new UserRegistrationPage(driver) : userRegistrationPage;
+    }
+
 }

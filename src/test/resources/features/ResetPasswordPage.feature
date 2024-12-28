@@ -1,4 +1,4 @@
-Feature: Reset Password
+Feature: Reset Password Page tests
 
   Scenario: Successful password reset request
     Given the user is on the login page

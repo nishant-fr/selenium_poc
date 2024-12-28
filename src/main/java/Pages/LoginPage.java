@@ -14,10 +14,10 @@ public class LoginPage {
     private WebDriver driver;
     private WaitHelper wait;
 
-    @FindBy(id = ":r0:")
+    @FindBy(xpath = "//span[text()='Email']//..//..//..//input")
     private WebElement usernameInput;
 
-    @FindBy(id = ":r1:")
+    @FindBy(xpath = "//span[text()='Password']//..//..//..//input")
     private WebElement passwordInput;
 
     @FindBy(xpath = "//button[@type='submit' and text()='Login']")

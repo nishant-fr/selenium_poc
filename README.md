@@ -25,6 +25,7 @@
      - `jakarta.json`
      - `assertj-core`
      - `json-unit-assertj`
+     - `javafaker`
 
 ### 4. **Install IntelliJ Plugins**
 - Install the following plugins in IntelliJ IDEA:
@@ -76,3 +77,15 @@ To execute the tests, run the following command:
    mvn test -DtestClassName=TestRunner
    ```
 
+
+## Report Generation
+
+
+### 1. **Extent Reports**
+TODO - ADD path for extent report
+
+
+### 2. **Native Cucumber HTML Reports**
+TODO - Add path for generic cucumber report
+
+TODO - Fix issues with LOGGER into the console
