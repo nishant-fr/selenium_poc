@@ -40,11 +40,11 @@ src
 │            └── Reports       (Extent Report configuration)
 ├── test
 │    └── java
-│         └──├── Runners (Cucumber Test Runners)
+│         └──├── Runners       (Cucumber Test Runners)
 │            └── Steps         (Step Definitions for Cucumber)
 └── resources
-     ├── features      (Cucumber feature files)
-     └── config        (Configuration files like extent report, logger etc.)
+     ├── features              (Cucumber feature files)
+     └── config                (Configuration files like extent report, logger etc.)
 ```
 
 ## Maven Commands
